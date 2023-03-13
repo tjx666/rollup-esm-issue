@@ -2,15 +2,18 @@
     "name": "rollup-esm-issue",
     "version": "1.0.0",
     "description": "",
+    "type": "module",
     "main": "index.js",
     "scripts": {
-        "build": "rm -rf ./dist && rollup -c"
+        "build": "rm -rf ./dist && rollup -c",
+        "build:vite": "vite build --force"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@rollup/plugin-node-resolve": "^15.0.1",
-        "rollup": "^3.19.1"
+        "rollup": "^3.19.1",
+        "vite": "^4.1.4"
     }
 }
